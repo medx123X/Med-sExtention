@@ -1,4 +1,4 @@
-<img width="1918" height="1087" alt="Screenshot 2026-06-26 142344" src="https://github.com/user-attachments/assets/ce6b6c75-0a35-422d-a211-d6334558ee05" /># Med-sExtention
+# Med-sExtention
 
 # LumiList
 
