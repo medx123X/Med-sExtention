@@ -21,10 +21,12 @@ A beautiful replacement for Chrome's New Tab page with bookmark organization, wa
 ---
 
 ## 📸 Screenshots
-<img width="1918" height="1088" alt="Screenshot 2026-06-30 115051" src="https://github.com/user-attachments/assets/30b456c9-eb19-4c33-b1c8-b06d9d8a968c" />
+<img width="1917" height="1087" alt="image" src="https://github.com/user-attachments/assets/134c5933-9b39-4b3a-a8d6-0fd3dfb0cd88" />
 
 
-<img width="1918" height="1090" alt="Screenshot 2026-06-30 115339" src="https://github.com/user-attachments/assets/ea578511-dae3-494e-86c0-31ce61b22c4b" />
+
+<img width="1917" height="1087" alt="image" src="https://github.com/user-attachments/assets/8b718ef3-c86f-44e1-bb77-fbcd9bac38cb" />
+
 <img width="1918" height="1087" alt="Screenshot 2026-06-26 142344" src="https://github.com/user-attachments/assets/7ad1c607-6dc4-44ef-9404-6351344554e8" />
 
 
