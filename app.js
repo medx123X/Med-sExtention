@@ -49,6 +49,7 @@ let editingBm  = null; // { groupId, bookmarkId|null }
 
 // ── Storage ────────────────────────────────────
 function save() {
+<<<<<<< HEAD
   try {
     // Save state WITHOUT wallpapers (to keep main key small)
     const stateWithoutWallpapers = {
@@ -73,6 +74,14 @@ function save() {
         if (tab.wallpaper) localStorage.setItem(`wp_${tab.id}`, tab.wallpaper);
         else localStorage.removeItem(`wp_${tab.id}`);
       });
+=======
+  const raw = JSON.stringify(state);
+  try {
+    if (typeof chrome !== 'undefined' && chrome.storage) {
+      chrome.storage.local.set({ lumilistData: raw });
+    } else {
+      localStorage.setItem('lumilistData', raw);
+>>>>>>> b708b0cc73be69b430fc7608fe8718ff39d5e0e8
     }
   } catch(e) { console.warn('save error', e); }
 }
@@ -83,6 +92,7 @@ function load(cb) {
   }
   try {
     if (typeof chrome !== 'undefined' && chrome.storage) {
+<<<<<<< HEAD
       chrome.storage.local.get(null, (res) => {
         state = parse(res.lumilistData) || structuredClone(DEFAULT_DATA);
         migrateState();
@@ -90,15 +100,23 @@ function load(cb) {
         state.tabs.forEach(tab => {
           if (res[`wp_${tab.id}`]) tab.wallpaper = res[`wp_${tab.id}`];
         });
+=======
+      chrome.storage.local.get('lumilistData', (res) => {
+        state = parse(res.lumilistData) || structuredClone(DEFAULT_DATA);
+        migrateState();
+>>>>>>> b708b0cc73be69b430fc7608fe8718ff39d5e0e8
         cb();
       });
     } else {
       state = parse(localStorage.getItem('lumilistData')) || structuredClone(DEFAULT_DATA);
       migrateState();
+<<<<<<< HEAD
       state.tabs.forEach(tab => {
         const wp = localStorage.getItem(`wp_${tab.id}`);
         if (wp) tab.wallpaper = wp;
       });
+=======
+>>>>>>> b708b0cc73be69b430fc7608fe8718ff39d5e0e8
       cb();
     }
   } catch(e) {
@@ -163,10 +181,15 @@ function renderWallpaper() {
   const wp  = document.getElementById('wallpaper');
   const fit = tab?.wallpaperFit || '100% 100%';
 
+<<<<<<< HEAD
+=======
+  // Always reset bg first so switching tabs is clean
+>>>>>>> b708b0cc73be69b430fc7608fe8718ff39d5e0e8
   wp.style.backgroundImage = '';
   wp.style.background      = '';
 
   if (tab?.wallpaper) {
+<<<<<<< HEAD
     wp.style.backgroundImage    = `url(${JSON.stringify(tab.wallpaper)})`;
     wp.style.backgroundSize     = fit;
     wp.style.backgroundPosition = 'center';
@@ -177,6 +200,15 @@ function renderWallpaper() {
     wp.style.backgroundSize     = 'cover';
     wp.style.backgroundPosition = 'center';
     wp.style.backgroundRepeat   = 'no-repeat';
+=======
+    wp.style.backgroundImage = `url(${JSON.stringify(tab.wallpaper)})`;
+    wp.style.backgroundSize  = fit;
+    wp.style.backgroundPosition = 'center';
+    wp.style.backgroundRepeat   = 'no-repeat';
+  } else {
+    // Subtle dark fallback — no wallpaper set
+    wp.style.background = 'radial-gradient(ellipse at 70% 50%, rgba(50,8,8,0.9) 0%, #080506 70%)';
+>>>>>>> b708b0cc73be69b430fc7608fe8718ff39d5e0e8
   }
 
   // Sync fit buttons
@@ -188,6 +220,7 @@ function renderWallpaper() {
 function applyWallpaper(dataUrlOrSrc) {
   const tab = getActiveTab();
   if (!tab) return;
+<<<<<<< HEAD
 
   // If it's a data URL (uploaded file), compress it first to fit storage limits
   if (dataUrlOrSrc.startsWith('data:')) {
@@ -212,6 +245,11 @@ function applyWallpaper(dataUrlOrSrc) {
     save();
     renderWallpaper();
   }
+=======
+  tab.wallpaper = dataUrlOrSrc;
+  save();
+  renderWallpaper();
+>>>>>>> b708b0cc73be69b430fc7608fe8718ff39d5e0e8
 }
 
 // ── Render ─────────────────────────────────────
@@ -599,6 +637,7 @@ document.getElementById('importFile').addEventListener('change', e => {
 // Clear all
 document.getElementById('clearAllBtn').onclick = () => {
   if (confirm('Delete all data and start fresh?')) {
+<<<<<<< HEAD
     if (typeof chrome !== 'undefined' && chrome.storage) {
       chrome.storage.local.clear(() => {
         state = structuredClone(DEFAULT_DATA); save(); render();
@@ -607,6 +646,9 @@ document.getElementById('clearAllBtn').onclick = () => {
       localStorage.clear();
       state = structuredClone(DEFAULT_DATA); save(); render();
     }
+=======
+    state = structuredClone(DEFAULT_DATA); save(); render();
+>>>>>>> b708b0cc73be69b430fc7608fe8718ff39d5e0e8
     document.getElementById('settingsModal').classList.remove('open');
   }
 };
