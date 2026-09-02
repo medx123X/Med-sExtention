@@ -4,35 +4,96 @@
 ══════════════════════════════════════════ */
 
 const DEFAULT_DATA = {
-  tabs: [
+  "tabs": [
     {
-      id: 'home', name: 'Home', accent: '#e63232',
-      wallpaper: null, wallpaperFit: '100% 100%',
-      groups: [
-        { id: 'g1', name: 'Netflix',  bookmarks: [{ id: 'b1', name: 'Netflix',  url: 'https://netflix.com' }] },
-        { id: 'g2', name: 'Youtube',  bookmarks: [{ id: 'b2', name: 'YouTube',  url: 'https://youtube.com' }] },
-        { id: 'g3', name: 'Whatsapp', bookmarks: [{ id: 'b3', name: 'WhatsApp', url: 'https://web.whatsapp.com' }] },
+      "id": "home", "name": "Home", "accent": "#e63232",
+      "wallpaper": null, "wallpaperFit": "100% 100%",
+      "groups": [
+        { "id": "g1", "name": "LinkedIn", "bookmarks": [{ "id": "_s7s4789", "name": "linkedin", "url": "https://www.linkedin.com/feed/" }] },
+        { "id": "g2", "name": "Youtube", "bookmarks": [{ "id": "b2", "name": "YouTube", "url": "https://youtube.com" }] },
+        { "id": "_l37dca9", "name": "Social", "bookmarks": [
+          { "id": "_5rb80df", "name": "facebook", "url": "https://www.facebook.com/" },
+          { "id": "_u6ud4fr", "name": "instagram", "url": "https://www.instagram.com/" },
+          { "id": "_za8banp", "name": "tiktok", "url": "https://www.tiktok.com/" }
+        ]},
+        { "id": "_rnpzyd6", "name": "BUE", "bookmarks": [
+          { "id": "_796q47p", "name": "e_learning", "url": "https://learn1.bue.edu.eg/login/index.php" },
+          { "id": "_0eehzbd", "name": "srs", "url": "https://srs.bue.edu.eg/studentportal/home.aspx" }
+        ]}
       ]
     },
     {
-      id: 'ai', name: 'AI', accent: '#e63232',
-      wallpaper: null, wallpaperFit: '100% 100%',
-      groups: [
-        { id: 'g4', name: 'Claude',  bookmarks: [{ id: 'b4', name: 'Claude',   url: 'https://claude.ai' }] },
-        { id: 'g5', name: 'ChatGPT', bookmarks: [{ id: 'b5', name: 'ChatGPT',  url: 'https://chatgpt.com' }] },
-        { id: 'g6', name: 'Gemini',  bookmarks: [{ id: 'b6', name: 'Gemini',   url: 'https://gemini.google.com' }] },
+      "id": "ai", "name": "AI", "accent": "#e63232",
+      "wallpaper": null, "wallpaperFit": "100% 100%",
+      "groups": [
+        { "id": "_gy2n4v0", "name": "Chatgpt", "bookmarks": [{ "id": "_5cbk1bd", "name": "chatgpt", "url": "https://chatgpt.com" }] },
+        { "id": "g4", "name": "Claude", "bookmarks": [{ "id": "b4", "name": "Claude", "url": "https://claude.ai" }] },
+        { "id": "g6", "name": "Gemini", "bookmarks": [{ "id": "b6", "name": "Gemini", "url": "https://gemini.google.com" }] },
+        { "id": "_cjfno7e", "name": "kaggle", "bookmarks": [{ "id": "_2xsch96", "name": "kaggle", "url": "https://www.kaggle.com/" }] },
+        { "id": "_50w8aoq", "name": "general", "bookmarks": [
+          { "id": "_i14hlu3", "name": "notebook_lm", "url": "https://notebooklm.google.com/" },
+          { "id": "_rqrl2li", "name": "no", "url": "https://nosignups.net/" },
+          { "id": "_25knjdz", "name": "prompets", "url": "https://aipromptshub.co/#tools" }
+        ]},
+        { "id": "_gdq8kzi", "name": "Design", "bookmarks": [
+          { "id": "_n5ikr2l", "name": "stitch", "url": "https://stitch.withgoogle.com/" },
+          { "id": "_1dtdsdx", "name": "figma", "url": "https://www.figma.com/" },
+          { "id": "_ko08q77", "name": "canva", "url": "https://www.canva.com/" }
+        ]}
       ]
     },
     {
-      id: 'anime', name: 'Anime', accent: '#e63232',
-      wallpaper: null, wallpaperFit: '100% 100%',
-      groups: [
-        { id: 'g7', name: 'AniWave',  bookmarks: [{ id: 'b7', name: 'AniWave',  url: 'https://aniwave.to' }] },
-        { id: 'g8', name: 'AniWatch', bookmarks: [{ id: 'b8', name: 'AniWatch', url: 'https://aniwatch.to' }] },
+      "id": "hi__7yqxbty", "name": "Quran", "accent": "#e63232",
+      "wallpaper": null, "wallpaperFit": "100% 100%",
+      "groups": [
+        { "id": "_btmreql", "name": "quran", "bookmarks": [
+          { "id": "_11cezrx", "name": "tanzil", "url": "https://tanzil.net/" },
+          { "id": "_1gu1peo", "name": "surahquran", "url": "http://surahquran.com/" }
+        ]},
+        { "id": "_9gw8mtr", "name": "Duas", "bookmarks": [
+          { "id": "_gybwc0n", "name": "islamtics", "url": "https://islamtics.com/" },
+          { "id": "_o222zk4", "name": "qissahapp", "url": "https://qissahapp.com/duas" }
+        ]},
+        { "id": "_16pzcw6", "name": "Hadith", "bookmarks": [{ "id": "_m3lloqo", "name": "sunnah", "url": "https://sunnah.com/" }] }
       ]
+    },
+    {
+      "id": "books_and_research__86earop", "name": "research", "accent": "#e63232",
+      "wallpaper": null, "wallpaperFit": "100% 100%",
+      "groups": [
+        { "id": "_nkybgkj", "name": "articles", "bookmarks": [
+          { "id": "_ugktv5h", "name": "sci hub", "url": "https://sci-hub.st/" },
+          { "id": "_3vatgwb", "name": "core.ac.uk", "url": "https://core.ac.uk/" },
+          { "id": "_4zbjswv", "name": "sci dp", "url": "https://dbdb.io/db/scidb" }
+        ]},
+        { "id": "_8bhy9p3", "name": "books", "bookmarks": [{ "id": "_5fhzj0d", "name": "annas's archive", "url": "https://annas-archive.gd/datasets" }] }
+      ]
+    },
+    {
+      "id": "arabic_poetry__jaz2glu", "name": "Literature", "accent": "#e63232",
+      "wallpaper": null, "wallpaperFit": "100% 100%",
+      "groups": [
+        { "id": "_voey2ue", "name": "AR poetry", "bookmarks": [
+          { "id": "_d17lrug", "name": "aldiwan", "url": "https://www.aldiwan.net/" },
+          { "id": "_0axga9f", "name": "ar-poetry", "url": "https://arabic-poetry.net/poems" },
+          { "id": "_mfw8uuy", "name": "poetsgate", "url": "https://poetsgate.com/" },
+          { "id": "_rubuftv", "name": "poetspedia", "url": "https://poetspedia.com/" },
+          { "id": "_xr5pydt", "name": "mizanalarab", "url": "https://mizanalarab.com/" }
+        ]},
+        { "id": "_26favds", "name": "Adab", "bookmarks": [
+          { "id": "_mnznstb", "name": "adab", "url": "https://www.adab.com/" },
+          { "id": "_mog6cyy", "name": "adabworld", "url": "https://adabworld.com/" },
+          { "id": "_aze7res", "name": "dorar", "url": "https://dorar.net/arabia/5789/%D8%A7%D9%84%D8%A3%D8%AF%D8%A8-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A" }
+        ]}
+      ]
+    },
+    {
+      "id": "courses__zvy0bs6", "name": "courses", "accent": "#e63232",
+      "wallpaper": null, "wallpaperFit": "100% 100%",
+      "groups": []
     }
   ],
-  activeTab: 'home'
+  "activeTab": "home"
 };
 
 const ACCENT_COLORS = [
