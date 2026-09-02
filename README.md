@@ -21,6 +21,9 @@ A beautiful replacement for Chrome's New Tab page with bookmark organization, wa
 ---
 
 ## 📸 Screenshots
+<img width="1918" height="1087" alt="Screenshot 2026-06-26 142344" src="https://github.com/user-attachments/assets/7ad1c607-6dc4-44ef-9404-6351344554e8" />
+<img width="1917" height="1090" alt="image" src="https://github.com/user-attachments/assets/a20e6709-bf66-41fa-a088-59316b0bf5b1" />
+
 <img width="1917" height="1087" alt="image" src="https://github.com/user-attachments/assets/134c5933-9b39-4b3a-a8d6-0fd3dfb0cd88" />
 
 
@@ -28,9 +31,11 @@ A beautiful replacement for Chrome's New Tab page with bookmark organization, wa
 <img width="1917" height="1087" alt="image" src="https://github.com/user-attachments/assets/8b718ef3-c86f-44e1-bb77-fbcd9bac38cb" />
 <img width="1915" height="1087" alt="image" src="https://github.com/user-attachments/assets/d509a4ff-1508-4420-8eca-1e1b20ac0660" />
 <img width="1917" height="1086" alt="image" src="https://github.com/user-attachments/assets/a824a8ba-2f8d-448a-864f-ab7ce79cd7a6" />
+<img width="1917" height="1048" alt="Screenshot 2026-09-02 043323" src="https://github.com/user-attachments/assets/5f97a639-e310-47d6-a529-53c6362cef59" />
 
-<img width="1918" height="1087" alt="Screenshot 2026-06-26 142344" src="https://github.com/user-attachments/assets/7ad1c607-6dc4-44ef-9404-6351344554e8" />
-<img width="1917" height="1090" alt="image" src="https://github.com/user-attachments/assets/a20e6709-bf66-41fa-a088-59316b0bf5b1" />
+<img width="1917" height="1087" alt="Screensot 2026-09-02 025054" src="https://github.com/user-attachments/assets/f94f4816-530b-4a73-8a7a-7484d7dac01c" />
+<img width="1917" height="1047" alt="Screenshot 2026-09-02 031826" src="https://github.com/user-attachments/assets/9ae33d7a-17ab-4d78-a317-2a0a9d9fea23" />
+
 
 
 ---
