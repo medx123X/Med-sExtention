@@ -58,7 +58,7 @@ function save() {
     const raw = JSON.stringify(stateWithoutWallpapers);
 
     if (typeof chrome !== 'undefined' && chrome.storage) {
-      chrome.storage.local.set({ lumilistData: raw });
+      chrome.storage.local.set({ medExtentionData: raw });
       // Save each tab's wallpaper separately
       const wallpaperData = {};
       state.tabs.forEach(tab => {
@@ -68,7 +68,7 @@ function save() {
         chrome.storage.local.set(wallpaperData);
       }
     } else {
-      localStorage.setItem('lumilistData', raw);
+      localStorage.setItem('medExtentionData', raw);
       state.tabs.forEach(tab => {
         if (tab.wallpaper) localStorage.setItem(`wp_${tab.id}`, tab.wallpaper);
         else localStorage.removeItem(`wp_${tab.id}`);
@@ -84,7 +84,7 @@ function load(cb) {
   try {
     if (typeof chrome !== 'undefined' && chrome.storage) {
       chrome.storage.local.get(null, (res) => {
-        state = parse(res.lumilistData) || structuredClone(DEFAULT_DATA);
+        state = parse(res.medExtentionData) || structuredClone(DEFAULT_DATA);
         migrateState();
         // Restore wallpapers from separate keys
         state.tabs.forEach(tab => {
@@ -93,7 +93,7 @@ function load(cb) {
         cb();
       });
     } else {
-      state = parse(localStorage.getItem('lumilistData')) || structuredClone(DEFAULT_DATA);
+      state = parse(localStorage.getItem('medExtentionData')) || structuredClone(DEFAULT_DATA);
       migrateState();
       state.tabs.forEach(tab => {
         const wp = localStorage.getItem(`wp_${tab.id}`);

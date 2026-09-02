@@ -1,6 +1,6 @@
 # Med-sExtention
 
-# LumiList
+# medExtention
 
 A beautiful replacement for Chrome's New Tab page with bookmark organization, wallpapers, and productivity tools.
 
